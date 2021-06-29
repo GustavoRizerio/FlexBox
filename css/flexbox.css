@@ -1,0 +1,149 @@
+/* classe do container do cabeçalho */
+.cabecalhoPrincipal .container{
+    display: flex;/* flex box */
+    align-items: center;/* alinhar os itens no meio */
+    justify-content: space-between;/* colocar um espaço entre os elementos que sobrarem */
+}   
+
+/* classe da nav do cabeçalho */
+.cabecalhoPrincipal-nav{
+    display: flex;/* flex box */
+}
+
+/*classe do container do rodape*/
+.rodapePrincipal-patrocinadores .container{
+    display: flex;/* flex box */
+    justify-content: space-between;/* colocar um espaço entre os elementos que sobrarem */
+}
+
+/*classe do patrocinadores do rodape*/
+.rodapePrincipal-patrocinadores-list{
+    display: flex;/* flex box */
+    align-items: center;/* alinhas os itens no centro */
+    justify-content: space-around;/* colocar um espaçamento em volta do elemento */
+    width:70%;/* largura do patrocinadores */
+    margin-right: 5%;/* espaçamento com margin para direita */
+}
+
+/* classe do contato do rodape */
+.rodapePrincipal-contatoForm{
+    width:25%;/* largura do contato */
+}
+
+/* classe do contato do rodape.fieldset */
+.rodapePrincipal-contatoForm-fieldset{
+    display: flex;/* flex box */
+}
+
+/* classe da nav do rodape */
+.rodapePrincipal-navMap-list{
+    display: flex;/* flex box */
+    /* flex-direction: column;
+    flex-wrap: wrap; */
+    flex-flow: column wrap;/* definir como o flex vai ficar,wrap:quebrar a linha quando o elemento pai acabar */
+    height: 250px;/* altura do rodape */
+}
+
+/* classe de nossos cursos */
+.conteudoPrincipal-cursos{
+    display: flex;/* flex box */
+    flex-wrap: wrap;/* quebrar a linha quando o elemento pai acabar */
+    
+}
+
+/* classe de link de cursos */
+.conteudoPrincipal-cursos-link{
+    width: 23%;/* largura do link */
+    margin: 1%;/* margem pra baixo dos elementos */
+
+}
+
+/* classe de link de cursos */
+.conteudoPrincipal-cursos-link:nth-child(4n){/* pegar os filhos multiplicos de 4 para tirar a margem da direita */
+    margin-right: 0;/* margem pra direita */
+}
+
+/* classe de link de cursos */
+.conteudoPrincipal-cursos-link:nth-child(4n+1){/* pegar os filhos multiplicos de 4 mais 1 para tirar a margem da esquerda */
+    margin-left: 0;/* margem pra direita */
+}
+
+/* classe do container do video e lista */
+.videoSobre .container{
+    display: flex;
+
+}
+
+/* classe da lista */
+.videoSobre-sobre{
+    text-align: center;/*  */
+    display: flex;/*  */
+    flex-direction: column;/*  */
+    flex-grow: 2;/* pegar o elemento e dividir em 2 vezes na pagina */
+}
+/* classe da lista */
+.videoSobre-sobre-list{
+    flex-grow: 1;/* pegar o elemento e dividir ele na pagina */
+}
+
+/* classe do video */
+.videoSobre-video{
+    flex-grow: 1;/* pegar o elemento e dividir ele na pagina */
+    flex-shrink: 2;/* como o elemento vai diminuir no responsivo */
+}
+
+/* mobile */
+@media(max-width: 768px)  {
+    
+.cabecalhoPrincipal-nav{
+    flex-direction: column;/* Direçao do flex */
+}
+
+.cabecalhoPrincipal .container{
+    flex-direction: column;/* Direçao do flex */  
+    align-items: initial;/* alinhar os itens de forma inicial */
+    text-align: center;/* alinhas os intens no centro */
+}
+
+
+.conteudoPrincipal-cursos{
+    flex-direction: column;
+}
+
+.conteudoPrincipal-cursos-link{
+    width: 100%;
+}
+
+.rodapePrincipal-navMap-list{
+    height: auto;
+}
+
+.rodapePrincipal-patrocinadores .container{
+    flex-direction: column;
+    align-items: center;
+}
+
+.rodapePrincipal-patrocinadores-list{
+    margin: 0;
+    width: 100%;
+}   
+
+.rodapePrincipal-contatoForm{
+    width:100%;
+}
+
+.rodapePrincipal-contatoForm-fieldset{
+    justify-content:center;
+}
+
+.cabecalhoPrincipal-nav-link-app{
+order: -1;
+}
+.videoSobre .container{
+    flex-direction: column;
+}
+
+.videoSobre-video{
+    margin: 0 auto;
+}
+}
