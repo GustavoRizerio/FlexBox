@@ -7,7 +7,7 @@ curso de FlexBox da Alura.
 
 <div align="center">
 
-The **index.html** is a project done with HTML5 and CSS3
+The **index.html** is a project made with HTML5 and CSS3
 </div> 
 
 ## :rocket: Technology
